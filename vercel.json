@@ -28,8 +28,5 @@
                 "DELETE"
             ]
         }
-    ],
-    "rewrites":  [
-      {"source": "/(.*)", "destination": "/"}
     ]
 }
