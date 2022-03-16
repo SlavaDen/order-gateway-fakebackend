@@ -1,7 +1,7 @@
 import {Controller, Get, Post} from "@nestjs/common";
 
-@Controller("fake")
-export class FakeController {
+@Controller("app")
+export class AppController {
 
     @Get("/:order")
     get() {
@@ -11,7 +11,14 @@ export class FakeController {
     }
 
     @Post("/:order")
-    post() {
+    test() {
+        return {
+          result: true
+        };
+    }
+
+    @Post()
+    test1() {
         return {
           result: true
         };
