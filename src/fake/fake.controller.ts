@@ -10,7 +10,7 @@ export class FakeController {
         };
     }
 
-    @Post()
+    @Post("/:order")
     create() {
         return {
           result: true
